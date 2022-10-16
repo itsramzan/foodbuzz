@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+  font-family: "Quicksand", "Hind Siliguri";
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #aaaaaa;
+  background: #aaaaaa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0050d4;
+  border-radius: 10px;
+}
+
+.rc-pagination-item-active {
+  background: #0050d4;
+  border: 1px solid #0050d4 !important;
+}
+
+.rc-pagination-item-active a {
+  color: #fff !important;
+}
+
+.rc-pagination-item:focus,
+.rc-pagination-item:hover {
+  border: 1px solid #0050d4 !important;
+}
+
+.rc-pagination-item:focus a,
+.rc-pagination-item:hover a {
+  color: #0050d4;
+}
